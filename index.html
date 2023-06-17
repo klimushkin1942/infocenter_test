@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <title>Тестовое инфоцентр (чайники)</title>
+</head>
+<body>
+<div class="container">
+    <h1 class="mt-4">Сайт по продаже чайников</h1>
+    <h2 class="mt-4">Добавить чайник</h2>
+    <form id="addKettle" class="mt-4">
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <input type="text" class="form-control" name="brand" placeholder="Бренд" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <input type="text" class="form-control" name="model" placeholder="Модель" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <input type="number" class="form-control" name="price" placeholder="Цена" required>
+            </div>
+        </div>
+        <button id="addBtn" type="submit" class="btn btn-success">Добавить</button>
+    </form>
+
+
+    <h2 class="mt-4">Изменить чайник</h2>
+    <form id="updateKettle" class="mt-4">
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <input type="text" class="form-control" name="update-brand" placeholder="Бренд" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <input type="text" class="form-control" name="update-model" placeholder="Модель" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <input type="number" class="form-control" name="update-price" placeholder="Цена" required>
+            </div>
+        </div>
+        <button id="updateBtn" type="submit" class="btn btn-primary">Изменить</button>
+    </form>
+
+    <h2 class="mt-4">Список чайников</h2>
+    <table id="kettleList" class="table mt-4 table-bordered">
+        <thead>
+            <tr class="table-primary">
+                <th>Бренд</th>
+                <th>Модель</th>
+                <th>Цена</th>
+                <th>Удаление</th>
+                <th>Изменение</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+</body>
+</html>
